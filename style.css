@@ -22,3 +22,7 @@ body {
 .green {
   color: #2d5016;
 }
+section {
+  max-width: 1350px;
+  margin: auto;
+}
