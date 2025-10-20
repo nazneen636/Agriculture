@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -15,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
@@ -119,296 +125,113 @@
       </div>
     </nav>
     <!-- nav -->
-    <!-- header -->
-    <section class="relative">
-      <div class="carousel w-full">
-        <div
-          id="item1"
-          class="carousel-item bg-no-repeat bg-cover bg-center w-full bg-[url(/public/bg.jpeg)] relative py-32"
-        >
-          <div class="absolute left-0 top-0 w-full h-full bg-[#ffffffc0]"></div>
-          <div
-            class="relative z-10 w-full flex items-center justify-center flex-col gap-5"
-          >
-            <h1 class="text-7xl oswald text-[#2d5016] font-bold uppercase">
-              Cultivate your future
-            </h1>
-            <p class="text-base max-w-[500px] text-center text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              pariatur nisi, eligendi deserunt, eaque aperiam beatae
-              laboriosam.1
-            </p>
-          </div>
-        </div>
-        <div
-          id="item2"
-          class="carousel-item bg-no-repeat bg-cover bg-center w-full bg-[url(/public/bg.jpeg)] relative py-32"
-        >
-          <div class="absolute left-0 top-0 w-full h-full bg-[#ffffffc0]"></div>
-          <div
-            class="relative z-10 w-full flex items-center justify-center flex-col gap-5"
-          >
-            <h1 class="text-7xl oswald text-[#2d5016] font-bold uppercase">
-              Cultivate your feature
-            </h1>
-            <p class="text-base max-w-[500px] text-center text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              pariatur nisi, eligendi deserunt, eaque aperiam beatae
-              laboriosam.1
-            </p>
-          </div>
-        </div>
-        <div
-          id="item3"
-          class="carousel-item bg-no-repeat bg-cover bg-center w-full bg-[url(/public/bg.jpeg)] relative py-32"
-        >
-          <div class="absolute left-0 top-0 w-full h-full bg-[#ffffffc0]"></div>
-          <div
-            class="relative z-10 w-full flex items-center justify-center flex-col gap-5"
-          >
-            <h1 class="text-7xl oswald text-[#2d5016] font-bold uppercase">
-              Cultivate your feature
-            </h1>
-            <p class="text-base max-w-[500px] text-center text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              pariatur nisi, eligendi deserunt, eaque aperiam beatae
-              laboriosam.1
-            </p>
-          </div>
-        </div>
-        <div
-          id="item4"
-          class="carousel-item bg-no-repeat bg-cover bg-center w-full bg-[url(/public/bg.jpeg)] relative py-32"
-        >
-          <div class="absolute left-0 top-0 w-full h-full bg-[#ffffffc0]"></div>
-          <div
-            class="relative z-10 w-full flex items-center justify-center flex-col gap-5"
-          >
-            <h1 class="text-7xl oswald text-[#2d5016] font-bold uppercase">
-              Cultivate your feature
-            </h1>
-            <p class="text-base max-w-[500px] text-center text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              pariatur nisi, eligendi deserunt, eaque aperiam beatae
-              laboriosam.1
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="flex absolute top-[85%] left-1/2 -translate-x-1/2 w-full justify-center gap-2 py-2"
-      >
-        <a
-          href="#item1"
-          class="btn btn-xs h-5 w-5 bg-[#2d5016] text-white rounded-full border-none"
-          >1</a
-        >
-        <a
-          href="#item2"
-          class="btn btn-xs h-5 w-5 bg-[#2d5016] text-white rounded-full border-none"
-          >2</a
-        >
-        <a
-          href="#item3"
-          class="btn btn-xs h-5 w-5 bg-[#2d5016] text-white rounded-full border-none"
-          >3</a
-        >
-        <a
-          href="#item4"
-          class="btn btn-xs h-5 w-5 bg-[#2d5016] text-white rounded-full border-none"
-          >4</a
-        >
-      </div>
-    </section>
-    <!-- header -->
-    <!-- Farming Guides Page -->
-
-    <!-- Section 1: Video Tutorials -->
-    <section class="max-w-[1350px] mx-auto py-16 px-4">
-      <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold text-[#2d5016] uppercase">
-          Farming Video Tutorials
-        </h2>
-        <p class="text-gray-600 max-w-[600px] mx-auto mt-3">
-          Explore easy-to-follow video tutorials covering essential farming
-          practices, tools usage, and modern techniques for better yield.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Tutorial 1 -->
-        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
-          <div class="aspect-video">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-              title="Farming Tutorial"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-[#2d5016]">
-              Organic Fertilizer Application
-            </h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Learn how to apply organic fertilizers effectively for healthy
-              soil.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tutorial 2 -->
-        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
-          <div class="aspect-video">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Farming Tutorial"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-[#2d5016]">
-              Seasonal Crop Rotation
-            </h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Understand the science behind rotating crops for soil balance.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tutorial 3 -->
-        <div class="rounded-xl overflow-hidden shadow-lg bg-white">
-          <div class="aspect-video">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/sBws8MSXN7A"
-              title="Farming Tutorial"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-[#2d5016]">
-              Smart Irrigation Techniques
-            </h3>
-            <p class="text-gray-600 text-sm mt-1">
-              A modern approach to efficient water management for farms.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2: Categorized Guides -->
-    <section class="bg-[#f9fafb] py-16 px-4">
-      <div class="max-w-[1350px] mx-auto text-center mb-10">
-        <h2 class="text-4xl font-bold text-[#2d5016] uppercase">
-          Guides by Category
-        </h2>
-        <p class="text-gray-600 max-w-[600px] mx-auto mt-3">
-          Browse detailed guides by crop type, season, or farming method to get
-          precise, actionable advice.
-        </p>
-      </div>
-
-      <div class="max-w-[1000px] mx-auto grid md:grid-cols-3 gap-6">
-        <div
-          class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold text-[#2d5016] mb-2">Crop Type</h3>
-          <p class="text-gray-600 text-sm mb-3">
-            Guides on rice, wheat, maize, vegetables, and more.
+    <!-- HERO -->
+    <div class="hero" style="background-image: url(../public/g2.jpg)">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md py-20">
+          <h1 class="mb-5 text-5xl font-bold">Contact Us</h1>
+          <p class="mb-5">
+            Prevention cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut.
           </p>
-          <a href="#" class="text-green-700 font-medium hover:underline"
-            >Explore Crop Guides →</a
-          >
         </div>
+      </div>
+    </div>
+    <!-- HERO -->
 
-        <div
-          class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold text-[#2d5016] mb-2">Season</h3>
-          <p class="text-gray-600 text-sm mb-3">
-            Planting schedules and best practices for each season.
-          </p>
-          <a href="#" class="text-green-700 font-medium hover:underline"
-            >Explore Seasonal Tips →</a
+    <!-- section one tutorials -->
+    <section>
+      <div class="grid grid-cols-3 gap-10 mt-10">
+        <form class="col-span-2 rounded-md shadow-md px-6 py-5">
+          <h1 class="title text-center mb-5 oswald">Send us a message</h1>
+          <div class="flex flex-col mt-2">
+            <label for="name">Name</label>
+            <input
+              class="input validator w-full"
+              type="text"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="flex flex-col mt-2">
+            <label for="email">Email</label>
+            <input
+              class="input validator w-full"
+              type="email"
+              id="email"
+              required
+              placeholder="mail@site.com"
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="validator-hint">Enter valid email address</div>
+            <label for="subject" class="mb-1">Subject</label>
+          </div>
+          <select id="subject" class="select validator w-full" required>
+            <option disabled selected value="">Choose:</option>
+            <option>Crop Details</option>
+            <option>Farming Guides</option>
+            <option>Pest control</option>
+          </select>
+          <div class="flex flex-col mt-4">
+            <label for="message" class="mb-1">Message (optional)</label>
+            <textarea
+              class="textarea h-24 w-full"
+              id="message"
+              placeholder="Your message here"
+            ></textarea>
+          </div>
+          <p class="validator-hint">Required</p>
+          <button
+            class="btn w-full bg-green-700 hover:bg-gray-300 text-white hover:text-black"
+            type="submit"
           >
-        </div>
+            Submit form
+          </button>
+        </form>
 
-        <div
-          class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold text-[#2d5016] mb-2">
-            Farming Method
-          </h3>
-          <p class="text-gray-600 text-sm mb-3">
-            Learn organic, hydroponic, and sustainable farming methods.
-          </p>
-          <a href="#" class="text-green-700 font-medium hover:underline"
-            >Explore Methods →</a
+        <div class="rounded-md shadow-md px-8 py-7">
+          <h1 class="text-center oswald text-2xl font-semibold green mb-8">
+            Contact Information
+          </h1>
+          <dl
+            class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700"
           >
+            <div class="flex flex-col pb-3">
+              <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">
+                Email address
+              </dt>
+              <dd class="text-lg font-medium text-green-700">
+                yourname@flowbite.com
+              </dd>
+            </div>
+            <div class="flex flex-col py-3">
+              <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">
+                Home address
+              </dt>
+              <dd class="text-lg font-semibold font-medium text-green-700">
+                92 Miles Drive, Newark, NJ 07103, California, USA
+              </dd>
+            </div>
+            <div class="flex flex-col pt-3">
+              <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">
+                Phone number
+              </dt>
+              <dd class="text-lg font-semibold font-medium text-green-700">
+                +00 123 456 789 / +12 345 678
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
-
-    <!-- Section 3: Step-by-Step Instructions -->
-    <section class="max-w-[1350px] mx-auto py-16 px-4">
-      <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold text-[#2d5016] uppercase">
-          Step-by-Step Farming Guides
-        </h2>
-        <p class="text-gray-600 max-w-[600px] mx-auto mt-3">
-          Follow easy step-by-step guides, expert tips, and best practices for
-          effective farming and higher productivity.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-[#2d5016]"
-        >
-          <h3 class="text-lg font-semibold text-[#2d5016] mb-2">
-            How to Prepare Soil
-          </h3>
-          <ul class="list-disc text-gray-700 text-sm ml-4 space-y-1">
-            <li>Test soil fertility and pH levels.</li>
-            <li>Add compost or manure to improve texture.</li>
-            <li>Till and aerate before planting.</li>
-          </ul>
-        </div>
-
-        <div
-          class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-[#2d5016]"
-        >
-          <h3 class="text-lg font-semibold text-[#2d5016] mb-2">
-            Pest Management Steps
-          </h3>
-          <ul class="list-disc text-gray-700 text-sm ml-4 space-y-1">
-            <li>Identify pests through early inspection.</li>
-            <li>Use biological or organic pest control first.</li>
-            <li>Apply safe pesticides only when needed.</li>
-          </ul>
-        </div>
-
-        <div
-          class="bg-white shadow-lg rounded-xl p-6 border-t-4 border-[#2d5016]"
-        >
-          <h3 class="text-lg font-semibold text-[#2d5016] mb-2">
-            Efficient Watering Schedule
-          </h3>
-          <ul class="list-disc text-gray-700 text-sm ml-4 space-y-1">
-            <li>Water early morning or late evening.</li>
-            <li>Use drip irrigation for controlled flow.</li>
-            <li>Adjust frequency based on soil moisture.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <!-- section one tutorials -->
 
     <!-- footer -->
     <footer
-      class="footer footer-horizontal footer-center bg-[#2d5016] text-white rounded p-10"
+      class="footer mt-10 footer-horizontal footer-center bg-[#2d5016] text-white rounded p-10"
     >
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover">Farming Guides</a>
@@ -470,54 +293,4 @@
 
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="index.js">
-    const validator = new JustValidate(document.querySelector("#basic_form"));
-
-    validator
-      .addField(document.querySelector("#basic_name"), [
-        {
-          rule: "required",
-        },
-        {
-          rule: "minLength",
-          value: 3,
-        },
-        {
-          rule: "maxLength",
-          value: 15,
-        },
-      ])
-      .addField(document.querySelector("#basic_email"), [
-        {
-          rule: "required",
-        },
-        {
-          rule: "email",
-        },
-      ])
-      .addField(document.querySelector("#basic_password"), [
-        {
-          rule: "required",
-        },
-        {
-          rule: "password",
-        },
-      ])
-      .addField(document.querySelector("#basic_age"), [
-        {
-          rule: "required",
-        },
-        {
-          rule: "number",
-        },
-        {
-          rule: "minNumber",
-          value: 18,
-        },
-        {
-          rule: "maxNumber",
-          value: 150,
-        },
-      ]);
-  </script>
 </html>
