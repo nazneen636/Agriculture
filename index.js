@@ -1,48 +1,28 @@
-const validator = new JustValidate(document.querySelector("#basic_form"));
+const year = document.getElementById("year");
+let form = document.getElementById("form");
+// year.innerHTML = new Date().getFullYear();
+console.log(form);
 
-validator
-  .addField(document.querySelector("#basic_name"), [
-    {
-      rule: "required",
-    },
-    {
-      rule: "minLength",
-      value: 3,
-    },
-    {
-      rule: "maxLength",
-      value: 15,
-    },
-  ])
-  .addField(document.querySelector("#basic_email"), [
-    {
-      rule: "required",
-    },
-    {
-      rule: "email",
-    },
-  ])
-  .addField(document.querySelector("#basic_password"), [
-    {
-      rule: "required",
-    },
-    {
-      rule: "password",
-    },
-  ])
-  .addField(document.querySelector("#basic_age"), [
-    {
-      rule: "required",
-    },
-    {
-      rule: "number",
-    },
-    {
-      rule: "minNumber",
-      value: 18,
-    },
-    {
-      rule: "maxNumber",
-      value: 150,
-    },
-  ]);
+const email = document.getElementById("floating_email");
+const emailError = document.getElementById("eErr");
+const submit = document.getElementById("submit");
+email.addEventListener("input", (e) => {
+  if (email.value.trim !== "") {
+    emailError.textContent = "";
+  }
+  console.log(e.target.value);
+});
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (email.value == "") {
+    console.log("input field is empty");
+    emailError.textContent = "input field is empty";
+  } else {
+    if (email.value !== "") {
+      emailError.textContent = "";
+      console.log(email.value);
+    }
+    email.value;
+    emailError.textContent = "";
+  }
+});
